@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,23 +10,24 @@ i<!DOCTYPE html>
             padding: 0;
             height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-image: url('forrest5.png'); /* Change this URL to your background image URL */
+            align-items: flex-start; /* Align items to the top */
+            justify-content: flex-start; /* Align items to the left */
+            text-align: left; /* Align text to the left */
+            background-image: url('forrest5.png'); /* Update this URL to your background image URL */
             background-size: cover;
             background-position: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
             color: #fff;
-        }
-        .container {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            border-radius: 10px;
+            padding: 30px; /* Add some padding for spacing */
         }
         h1 {
             font-size: 3em;
-            margin-bottom: 0.5em;
+            margin-bottom: 0.3em; /* Reduce margin for subtitle spacing */
+        }
+        h2 {
+            font-size: 1.5em;
+            font-style: italic; /* Subtitle in italics */
+            margin-bottom: 1em;
         }
         p {
             font-size: 1.2em;
@@ -42,8 +43,9 @@ i<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <div class="container">
+    <div>
         <h1>Greenspire</h1>
+        <h2>Poland's energy transition delivered.</h2> <!-- Added subtitle -->
         <p><a href="mailto:contact@greenspire.energy">contact@greenspire.energy</a></p>
     </div>
 </body>
