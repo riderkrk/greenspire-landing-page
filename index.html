@@ -20,6 +20,9 @@
             color: #fff;
             padding: 30px; /* Add some padding for spacing */
         }
+        .container {
+            margin-top: 40vh; /* Move text down to 40% from the top */
+        }
         h1 {
             font-size: 3em;
             margin-bottom: 0.3em; /* Reduce margin for subtitle spacing */
@@ -28,14 +31,15 @@
             font-size: 1.5em;
             font-style: italic; /* Subtitle in italics */
             margin-bottom: 1em;
+            font-weight: normal; /* Remove bold style */
         }
         p {
             font-size: 1.2em;
+            font-weight: normal; /* Remove bold style */
         }
         a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
@@ -43,10 +47,10 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Greenspire</h1>
-        <h2>Poland's energy transition delivered.</h2> <!-- Added subtitle -->
-        <p><a href="mailto:contact@greenspire.energy">contact@greenspire.energy</a></p>
+        <h2>Poland's energy transition delivered.</h2> <!-- Updated subtitle style -->
+        <p><a href="mailto:contact@greenspire.energy">contact@greenspire.energy</a></p> <!-- Updated link style -->
     </div>
 </body>
 </html>
