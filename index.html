@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenspire</title>
     <!-- Link to Google Fonts for "Libre Baskerville" -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"> -->
     <style>
         body {
             margin: 0;
@@ -47,9 +47,22 @@
         a:hover {
             text-decoration: underline;
         }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+     <!-- Video Background -->
+    <iframe class="video-bg" src="https://drive.google.com/file/d/1QWWyRbL93wohGDKAyQktg_LhftdfZVWk/preview" 
+        width="100%" height="100%" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+
     <div class="container">
         <h1>Greenspire</h1>
         <h2>Poland's energy transition delivered.</h2> <!-- Updated subtitle style -->
