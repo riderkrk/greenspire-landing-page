@@ -3,56 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenspire</title>
-    <!-- Link to Google Fonts for "Libre Baskerville" -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <title>Video Background Example</title>
     <style>
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            align-items: flex-start; /* Align items to the top */
-            justify-content: flex-start; /* Align items to the left */
-            text-align: left; /* Align text to the left */
-            background-image: url('forrest2.png'); /* Update this URL to your background image URL */
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Behind the page content */
             background-size: cover;
-            background-position: center;
-            font-family: 'Libre Baskerville', 'Century Schoolbook', serif; /* Use Libre Baskerville as primary font */
-            color: #fff;
-            padding: 30px; /* Add some padding for spacing */
         }
-        .container {
-            margin-top: 40vh; /* Move text down to 40% from the top */
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.3em; /* Reduce margin for subtitle spacing */
-        }
-        h2 {
-            font-size: 1.5em;
-            font-style: italic; /* Subtitle in italics */
-            margin-bottom: 1em;
-            font-weight: normal; /* Remove bold style */
-        }
-        p {
-            font-size: 1.2em;
-            font-weight: normal; /* Remove bold style */
-        }
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        .content {
+            position: relative;
+            z-index: 1; /* In front of the video */
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Greenspire</h1>
-        <h2>Poland's energy transition delivered.</h2> <!-- Updated subtitle style -->
-        <p><a href="mailto:contact@greenspire.energy">contact@greenspire.energy</a></p> <!-- Updated link style -->
-    </div>
+
+<!-- Video Background -->
+<video autoplay muted loop class="video-background">
+    <source src="https://photos.app.goo.gl/m1wvrxVTaaEKckzo9" type="video/mov">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Content -->
+<div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of a video background on a GitHub Pages website.</p>
+</div>
+
 </body>
 </html>
